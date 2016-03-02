@@ -90,7 +90,6 @@ public class EMRuleDesign {
 	/**
 	 * 对子/3带 一对校验
 	 * @param pointArr
-	 * @param colorArr
 	 * @return
 	 */
 	public static boolean pairValidate(List<Integer> pointArr) {

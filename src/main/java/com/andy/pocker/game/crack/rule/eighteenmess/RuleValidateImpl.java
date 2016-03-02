@@ -84,6 +84,14 @@ public class RuleValidateImpl implements IRuleValidate{
 		if(pockerA.size() == 1) {
 			Pocker a = pockerA.get(0);
 			Pocker b = pockerB.get(0);
+			if(a.getPoint() < 3 && b.getPoint() > 2) {
+				return 1;
+			}
+
+			if(a.getPoint() > 2 && b.getPoint() < 3) {
+				return -1;
+			}
+
 			if(a.getPoint() > b.getPoint()) {
 				return 1;
 			}
