@@ -95,11 +95,12 @@ public class InitPoint {
 		Map<String, Pocker> pockers = gamerB.getPockers();
 		Set<Entry<String, Pocker>> entrySet = pockers.entrySet();
 		int i = 0 ;
-		for( Entry<String, Pocker> entry: entrySet) {
+		System.out.println(gamerB);
+		/*for( Entry<String, Pocker> entry: entrySet) {
 			i ++;
 			System.out.println(i);
 			System.out.println(entry.getValue());
-		}
+		}*/
 //		68 719 476 736
 		System.out.println(Math.pow(2,36));
 	}

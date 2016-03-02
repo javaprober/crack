@@ -7,15 +7,18 @@ import com.andy.pocker.game.crack.rule.eighteenmess.init.InitPoint;
  *
  */
 public class App {
+	
+	
+	
 	public static void main(String[] args) {
 		
 		//初始化 双方,牌库
 		InitPoint.b_nonius = 0;
+		
 		Gambler gamerA = InitPoint.getGamerA();
 		Gambler gamerB = InitPoint.getGamerB();
-		//出牌规则
-		//
-		//多牌先出
+		
+		//出牌
 		
 		//赢牌过程
 		

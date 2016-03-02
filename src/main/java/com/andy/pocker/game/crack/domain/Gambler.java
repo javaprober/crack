@@ -16,10 +16,11 @@
 package com.andy.pocker.game.crack.domain;
 
 import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
 
 import lombok.Getter;
 import lombok.Setter;
-import lombok.ToString;
 
 /**
  * 打牌的人
@@ -28,7 +29,16 @@ import lombok.ToString;
  */
 @Setter
 @Getter
-@ToString
 public class Gambler {
 	public Map<String,Pocker> pockers;
+	
+	@Override
+	public String toString() {
+		StringBuffer buf = new StringBuffer();
+		Set<Entry<String, Pocker>> entrySet = pockers.entrySet();
+		for( Entry<String, Pocker> entry: entrySet) {
+			buf.append(entry.getValue().getColor() + "" + entry.getValue().getPoint() + ",");
+		}
+		return buf.toString();
+	}
 }
