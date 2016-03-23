@@ -30,25 +30,11 @@ public enum PockerColor {
 	/** 方块 **/
 	DIAMOND(4,"方块");
 	
+	private String desc;
+	private Integer tag;
 	PockerColor(Integer tag , String desc) {
 		this.tag = tag;
 		this.desc = desc;
-	}
-	
-	private String desc;
-	private Integer tag;
-	
-	public String getDesc() {
-		return desc;
-	}
-	public void setDesc(String desc) {
-		this.desc = desc;
-	}
-	public Integer getTag() {
-		return tag;
-	}
-	public void setTag(Integer tag) {
-		this.tag = tag;
 	}
 	
 	public static PockerColor getPockerColor(Integer tag) {
@@ -58,6 +44,22 @@ public enum PockerColor {
 			}
 		}
 		return null;
+	}
+
+	public String getDesc() {
+		return desc;
+	}
+
+	public void setDesc(String desc) {
+		this.desc = desc;
+	}
+
+	public Integer getTag() {
+		return tag;
+	}
+	
+	public void setTag(Integer tag) {
+		this.tag = tag;
 	}
 	
 	@Override
