@@ -1,2 +1,2 @@
-江湖扑克残局
-	四大金刚vs十八罗汉
+Arena game break
+	Four stainless steel vs eighteen bronze
